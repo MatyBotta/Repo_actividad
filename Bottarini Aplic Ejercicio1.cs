@@ -6,7 +6,7 @@ namespace Ejercicio1
     {
         static void Main(string[] args)
         {
-            double n1, n2, n3, prom, max = 0, promcur;
+            double n1, n2, n3, prom, max = 0, promcur,tcur;
             int i, ca;
             Console.WriteLine("Ingrese la cantidad de alumnos");
             ca = int.Parse(Console.ReadLine());
@@ -22,7 +22,7 @@ namespace Ejercicio1
                 Console.WriteLine("Ingrese la tercer nota");
                 n3 = Double.Parse(Console.ReadLine());
                 prom = (n1 + n2 + n3) / 3;
-                promcur += prom;
+                tcur += prom;
                 Console.WriteLine("El promedio es {0}", prom);
                 Console.ReadKey();
                 if (prom > max)
@@ -31,7 +31,8 @@ namespace Ejercicio1
                     nma = na;
                 }
             }
-            Console.WriteLine("El promedio mas alto es {0}, del alumno {1}", max, nma);
+            promcur = tcur / ca;
+            Console.WriteLine("El promedio mas alto es {0}, del alumno {1}, el promedio del curso es de {2}", max, nma,promcur);
         }
     }
 }
