@@ -10,8 +10,11 @@ namespace Ejercicio1
             int i, ca;
             Console.WriteLine("Ingrese la cantidad de alumnos");
             ca = int.Parse(Console.ReadLine());
+            string na, nma = ".";
             for (i = 0; i < ca; i++)
             {
+                Console.WriteLine("Ingrese el nombre del alumno ");
+                na = Console.ReadLine();
                 Console.WriteLine("Ingrese la primer nota");
                 n1 = Double.Parse(Console.ReadLine());
                 Console.WriteLine("Ingrese la segunda nota");
@@ -22,7 +25,10 @@ namespace Ejercicio1
                 Console.WriteLine("El promedio es {0}", prom);
                 Console.ReadKey();
                 if (prom > max)
+                {
                     max = prom;
+                    nma = na;
+                }
             }
         }
     }
