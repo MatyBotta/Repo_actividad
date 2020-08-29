@@ -7,6 +7,7 @@ namespace Ejercicio1
         static void Main(string[] args)
         {
          double n1, n2, n3, prom,max=0;
+            int i;
          ("Console.WriteLineIngrese la primer nota");
          n1 = Double.Parse(Console.ReadLine());
          Console.WriteLine("Ingrese la segunda nota");
