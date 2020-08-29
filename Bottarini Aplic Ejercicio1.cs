@@ -25,6 +25,14 @@ namespace Ejercicio1
                 tcur += prom;
                 Console.WriteLine("El promedio es {0}", prom);
                 Console.ReadKey();
+                if (prom >= 7)
+                {
+                    Console.WriteLine("El alumno ha aprobado");
+                }
+                else
+                {
+                    Console.WriteLine("El alumno ha desaprobado");
+                }
                 if (prom > max)
                 {
                     max = prom;
@@ -33,6 +41,7 @@ namespace Ejercicio1
             }
             promcur = tcur / ca;
             Console.WriteLine("El promedio mas alto es {0}, del alumno {1}, el promedio del curso es de {2}", max, nma,promcur);
+            Console.WriteLine("El promedio del curso es {0}", promcur);
         }
     }
 }
