@@ -6,11 +6,11 @@ namespace Ejercicio1
     {
         static void Main(string[] args)
         {
-            double n1, n2, n3, prom, max = 0, promcur,tcur;
+            double n1, n2, n3, prom, max = 0, promcur,tcur,min=11;
             int i, ca;
             Console.WriteLine("Ingrese la cantidad de alumnos");
             ca = int.Parse(Console.ReadLine());
-            string na, nma = ".";
+            string na, nma = ".",npa=".";
             for (i = 0; i < ca; i++)
             {
                 Console.WriteLine("Ingrese el nombre del alumno ");
@@ -37,6 +37,11 @@ namespace Ejercicio1
                 {
                     max = prom;
                     nma = na;
+                }
+                if (prom < min)
+                {
+                    min = prom;
+                    npa = na;
                 }
             }
             promcur = tcur / ca;
