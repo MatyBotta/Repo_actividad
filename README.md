@@ -1,0 +1,1 @@
+# Repo_actividad en este repositorio se trabajo con un archivo antes hecho de C#, agregandole funciones a un simple promedio de tres notas, como el aviso de la aprobacion o no de la materia, el promedio del curso, el promedio mas alto, entre otros. Integrantes Patricio Altamiranda y Bottarini Matias
